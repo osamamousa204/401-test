@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>hello from Raghad data</h1>
+        <%Raghad.forEach(val=>{%>
+        <div>
+            <h2><%=val.title%></h2>
+            <h5><%=val.auther%></h5>
+            <img src="<%=val.img_url%>" alt="news">
+           <a href="/detail/<%=val.id%>"> <button>show details</button></a>
+        </div>
+        <% })%>
+    </div>
+</body>
+
+</html>
