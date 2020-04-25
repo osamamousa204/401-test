@@ -13,10 +13,10 @@
     <div>
         <h2><%=val.title%></h2>
         <h5><%=val.auther%></h5>
-        <img src="<%=val.img_url%>" alt="">
+        <img src="<%=val.img_url%>" alt="news">
         <p><%=val.description%></p>
-        <button class="show_thaer">ADD</button>
         <div>
+            <button class="show">Add</button>
             <form class="form" action="./add" method="GET">
                 <input type="text" name="title" value="<%=val.title%>">
                 <input type="text" name="auther" value="<%=val.auther%>">
